@@ -38,7 +38,9 @@ body {
     width: 100%;
 }
 
-#hrs, #mins, #sec {
+#hrs,
+#mins,
+#sec {
     height: 100%;
     width: 5%;
     font-size: 24px;
@@ -52,7 +54,9 @@ body {
     color: white;
 }
 
-#info-btn, #git-btn, #fullscreen-btn {
+#info-btn,
+#git-btn,
+#fullscreen-btn {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -63,6 +67,7 @@ body {
     border: 1px;
     border-color: #141414;
     margin-top: 10px;
+    position: fixed;
 }
 
 #info-btn:hover {
@@ -87,11 +92,13 @@ body {
     height: 50px;
 }
 
-#abt-btn, #git-link {
+#abt-btn,
+#git-link {
     text-decoration: none;
 }
 
-#git-btn:hover, #fullscreen-btn:hover {
+#git-btn:hover,
+#fullscreen-btn:hover {
     transform: scale(1.1)
 }
 
@@ -135,8 +142,21 @@ body {
     top: 20px;
     right: 20px;
 }
-    
+
 #ctn-screen:fullscreen #timer-display {
-    font-size: 370px;
+    font-size: 350px;
 }
 
+#top-ctn {
+    position: relative;
+}
+
+#info-btn {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+}
+
+#git-btn {
+    margin-left: 100px;
+}
